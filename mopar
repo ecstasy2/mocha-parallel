@@ -46,7 +46,8 @@ function main() {
 
   if (program.parallel && /\d+/.test(program.parallel)) {
     opts.parallel = parseInt(program.parallel, 10);
-  } else {
+  }
+  else {
     opts.parallel = os.cpus().length;  /* default to number of cpus */
   }
 
